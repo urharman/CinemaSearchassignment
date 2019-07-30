@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>ENTER ANY MOVIE TITLE</h3>
+
+<form action="/Home/Search" method="post">
+    <input type="text" name="moviename" placeholder="Movie Name">
+    <input type="submit" value="Search TMDB"><br />
+</form>
+
+<hr />
+
+<h3>YOUR WATCH LIST</h3>
+
+<form action="/Home/Watchlist" method="post">
+    <input type="submit" value="My Watchlist"><br />
+</form>
+
+<br />
+
+<h5>ADD MOVIE TO WATCHLIST</h5>
+<form action="/Home/Create" method="post">
+    <input type="text" name="moviename" placeholder="Title">
+    <input type="text" name="wday" placeholder="Day">
+    <input type="submit" value="Add"><br />
+</form>
+
+<br />
+
+<h5>DELETE MOVIE FROM WATCHLIST</h5>
+<form action="/Home/Delete" method="post">
+    <input type="text" name="moviename" placeholder="Title">
+    <input type="submit" value="Delete"><br />
+</form>
+
+<br />
+
+<h5>UPDATE A MOVIE FROM WATCHLIST</h5>
+<form action="/Home/Update" method="post">
+    <input type="text" name="moviename" placeholder="Title">
+    <input type="text" name="wday" placeholder="Day">
+    <input type="submit" value="Update"><br />
+</form>

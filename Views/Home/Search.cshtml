@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = @ViewData["Title"];
+}
+
+<form action="/Home">
+    <input type="submit" value="Home" />
+</form>
+
+
+<h1>@ViewData["Title"]</h1>
+<h2>@ViewData["Vote"]/10</h2>
+<h5>@ViewData["Overview"]</h5>
+
+<img src="@ViewData["URL"]" style="width:25%;float:left">
